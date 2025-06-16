@@ -1,9 +1,27 @@
+@font-face {
+    font-family: "Bold";
+    src: url("fonts/SF-Pro-Text-Bold.otf");
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url("fonts/SF-Pro-Text-Regular.otf");
+}
+
+p {
+    font-family: "Regular";
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f7f9fc;
     color: #333;
+}
+
+* {
+    font-family: Bold;
 }
 
 header {
@@ -71,4 +89,189 @@ footer {
     background: #eee;
     padding: 15px;
     font-size: 14px;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo {
+    width: 120px; /* Bigger logo */
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Icon shadow */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Hover effect for logo */
+}
+
+.text-area h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.text-area .subtitle {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #dbeeff;
+}
+
+/* Add hover effect and shadow for module boxes */
+.module {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    transition: transform 0.2s ease;
+}
+ul li:hover {
+    transform: scale(1.03);
+    color: #0066cc;
+}
+
+h2 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+    position: relative;
+    animation: fadeSlide 0.8s ease-in-out;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #003366;
+}
+
+/* Optional: Also animate h1 */
+.text-area h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation: zoomIn 0.6s ease-in-out;
+}
+
+/* Title animation keyframes */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#team {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+    animation: fadeSlide 0.8s ease-in-out;
+}
+
+#team h2 {
+    margin-bottom: 30px;
+}
+
+.team-photo {
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.team-photo:hover {
+    transform: scale(1.03);
+}
+
+#team ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#team li {
+    background-color: #f0f8ff;
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#team li:hover {
+    transform: translateY(-3px);
+    background-color: #e0f0ff;
+}
+
+#team p {
+    font-style: italic;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-illustration {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.e-mail {
+    opacity: 0.6;
+}
+
+#team {
+    text-align: center;
+    padding: 50px 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Style the button */
+#colorButton {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#colorButton:hover {
+    background-color: #222;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
