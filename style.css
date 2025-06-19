@@ -317,3 +317,26 @@ h2:hover {
     background-color: #004999;
     transform: translateY(-3px);
 }
+
+.button-container a {
+    text-decoration: none;
+}
+
+.link-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.link-button:hover {
+    background-color: #004999;
+    transform: translateY(-3px);
+}
